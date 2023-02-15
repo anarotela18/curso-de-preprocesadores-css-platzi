@@ -1,0 +1,35 @@
+@import "globales.less";
+@media screen and (max-width: 992px) {
+    .intro{
+        width: 100% !important;
+        &__imagen{
+            width: calc(100% - 10px) !important;
+        }
+    }
+    .contenedor--cajas{
+        flex-direction: column;
+    }
+    .caja{
+        max-width: 100% !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .intro {
+        &__titulo {
+            .fuente(40px) !important;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .intro {
+        &__titulo {
+            .fuente(30px) !important;
+        }
+        &__imagen img{
+            width: calc(100% - 10px) !important;
+        }
+    }
+    .articulo--principal{
+        padding: 15px;
+    }
+}
